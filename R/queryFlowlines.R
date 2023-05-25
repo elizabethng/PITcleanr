@@ -42,7 +42,7 @@ queryFlowlines = function(sites_sf = NULL,
 
   # query flowlines from NHDPlus layer
   cat(paste("Querying streams upstream of", root_site_code, "\n"))
-  nhd_lst = nhdplusTools::plot_nhdplus(outlets = list(start_comid),
+  nhd_lst = nhdplusTools::plot_nhdplus(outlets = start_comid,
                                        streamorder = min_strm_order,
                                        actually_plot = F)
 
